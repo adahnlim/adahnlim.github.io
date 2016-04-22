@@ -1,1 +1,1 @@
-> Origin [jekyll-now]https://github.com/barryclark/jekyll-now)
+> Origin [jekyll-now](https://github.com/barryclark/jekyll-now)
