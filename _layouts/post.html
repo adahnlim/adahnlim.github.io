@@ -12,6 +12,21 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
+  <br>
 
-  {% include disqus.html %}
+  <div>
+    <ul class="tags post-tags cf">
+      <li>Tagged:</li>
+      {% for tag in page.tags %}
+      <li><a href="/search/?tags={{ tag }}">{{ tag | downcase }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <br>
+
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
+
+<!-- responsive video js -->
+<script src="/js/fluidvids.js"></script>
