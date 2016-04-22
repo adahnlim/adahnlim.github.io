@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hello World!
-tags: hello world
+title: 시작
+tags: 시작 start
 ---
 
-처음 시작하는 페이지!
-잘 부탁드립니다!
+시작 페이지!
+
