@@ -5,8 +5,8 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@import "_reset";
+@import "_variables";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-
+  
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -43,23 +43,23 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-
-h1 {
+  
+h1 {  
   font-size: 30px;
   a {
     color: inherit;
   }
 }
 
-h2 {
+h2 {  
   font-size: 24px;
 }
 
-h3 {
+h3 {  
   font-size: 20px;
 }
 
-h4 {
+h4 {  
   font-size: 18px;
   color: $gray;
 }
@@ -110,11 +110,6 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
 .date {
   font-style: italic;
   color: $gray;
@@ -157,7 +152,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
+  
   @include mobile {
     text-align: center;
   }
@@ -194,7 +189,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $helveticaNeue; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -204,7 +199,7 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
-
+  
   @include mobile {
     margin: 3px 0;
   }
@@ -213,9 +208,9 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $helveticaNeue; 
   font-size: 18px;
-
+  
   @include mobile {
     float: none;
     margin-top: 9px;
@@ -251,7 +246,7 @@ nav {
   border-bottom: none;
 }
 
-.post {
+.post { 
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -278,12 +273,126 @@ nav {
   background-color: $lightGray;
 }
 
+/*Tag from https://alexpearce.me*/
+.tags {
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  color: $darkGray;
+}
+
+.archive_list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.tags li {
+  float: left;
+  margin: 0 7px;
+}
+
+.tags li a {
+  padding: 1px 12px 2px 12px;
+  color: #bcc5c8;
+}
+
+.tags li a:hover {
+  color: #5e6d74;
+}
+
+.post-tags {
+  margin: 20px 0 0 0;
+}
+/* normalize.css Clearfix */
+.cf {
+  *zoom: 1
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
 }
 
+/*****************************************************************************/
+/*
+/* TAGS
+/*
+/*****************************************************************************/
+
+/* Tag icon stuff : http://hamishwillee.github.io/2014/06/06/tags-in-jekyll-without-plugins/
+-------------------------------------------------- */
+
+
+
+.tag-icon-image
+{
+display:block;
+background-image:url('/images/tagicon.png');
+background-size: 13px;
+background-repeat: no-repeat;
+background-position: left center;
+padding-left:20px;
+} 
+
+
+
+.tag-link {
+  display: inline;
+  font-size: 0.8em;
+}
+
+
+
+.tag-box {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.tag-box:before, .tag-box:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.tag-box:after {
+  clear: both;
+}
+
+.tag-box.inline li {
+  float: left;
+  font-size: 13px;
+  font-size: 0.875rem;
+  line-height: 2.5;
+}
+
+.tag-box a {
+  padding: 4px 6px;
+  margin: 2px;
+  background-color: #e6e6e6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.tag-box a span {
+  vertical-align: super;
+  font-size: 10px;
+  font-size: 0.625rem;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@import "_highlights";
