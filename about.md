@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+- 얇고 넓은 지식을 탐구하길 좋아합니다.
+- [여행과 사진](http://loveviruss.tistory.com)을 좋아합니다.
+- **가족**을 중요시 여깁니다.
+- [adahn.lim@gmail.com](mailto:adahn.lim@gmail.com) 입니다.
