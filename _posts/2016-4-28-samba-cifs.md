@@ -1,6 +1,7 @@
 ---
 layout: post
 title: samba, cifs를 이용하여 Window공유폴더를 마운트하자
+description: linux에서 Window공유폴더를 마운트하는 방법
 tags: samba cifs
 ---
 
