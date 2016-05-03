@@ -67,7 +67,8 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 		
 		- RAID on Data Disks
 			* 다른 클러스터에 Replica가 존재하고 있다.
-			* 1.2버전부터 JBOD feature가 포함되어 RAID10의 Overhead를 빼고 Disk Array를 구성할수 있기때문에 RAID는 권장되지 않는다.
+			* 1.2버전부터 JBOD feature가 포함되어 RAID10의 Overhead를 빼고 Disk Array를 구성할수 있기때문에
+			  RAID는 권장되지 않는다.
 			
 		- RAID on the Commit log disk
 			* Replica에서 Data loss를 방지하기때문에 필요하지 않다.
@@ -75,7 +76,8 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 
 		- Extended File Systems
 			* XFS 또는 EXT4를 사용해라.
-			* Cassandra에서 SizeTieredCompactionStrategy를 사용하면 하나의 파일이 Disk Space의 반을 사용할 수 있기때문에 size limit이 큰 XFS또는 EXT4를 사용하는것이 좋다.
+			* Cassandra에서 SizeTieredCompactionStrategy를 사용하면 하나의 파일이 Disk Space의 반을 사용할 수 
+			  있기때문에 size limit이 큰 XFS또는 EXT4를 사용하는것이 좋다.
 
 
 - Number of Nodes  
