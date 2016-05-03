@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Cassandra 3.x에서 Cluster 구성시 고려해야할 사항
-description: Cassandra 3.x에서 Cluster 구성(Enterprise/EC2)시 고려사항과 피애야할 사항 
+description: Cassandra 3.x에서 Cluster 구성(Enterprise/EC2)시 고려사항과 피해야할 사항 
 tags: cassandra cluster architecutre 
 ---
 
