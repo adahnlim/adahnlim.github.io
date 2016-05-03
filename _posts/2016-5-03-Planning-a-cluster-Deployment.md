@@ -118,14 +118,14 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 - EBS Volume
 	- GP2(General Purpose Volumn)
 	  
-				- 대부분 환경에서 권장  
-				- 10,000 IOPS 지원  
-				- x millisecond latency
-				- 99.0% 비율로 시간 내에 제공
+			- 대부분 환경에서 권장  
+			- 10,000 IOPS 지원  
+			- x millisecond latency
+			- 99.0% 비율로 시간 내에 제공
 	- PIOPS(Provisioned IOPS Volumn)
 	
-				- x millisecond latency
-				- 99.0% 비율로 시간 내에 제공 
+			- x millisecond latency
+			- 99.0% 비율로 시간 내에 제공 
 
 - EBS Magnetic volumn은 비추천  
 	데이터에 자주 액세스하지 않는 Cold Data에 사용하는 볼륨이고, 100 IOPS정도밖에 지원하지 않는다.
