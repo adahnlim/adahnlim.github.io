@@ -211,6 +211,8 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 		- Passwordless SSH  
 		- dstat / top / iostat / mpstat / iftop / sar /lsof / netstat /vmstat 
 		
- 
-	
+
+
+
+----------	
 [^1]: 데이터의 접근빈도가 많은 Data, <-> Cold data
