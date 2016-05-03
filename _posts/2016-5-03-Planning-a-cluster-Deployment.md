@@ -204,14 +204,16 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 	운영환경 부하에 따라 Scale을 하면서 테스트를 진행해라. 이 방법이 노드당 처리량을 알 수 있는 최선이 방법이다.
 
 - Too many keyspaces or tables  
-	Cassandra Keyspace는 JVM Memory의 Overhead를 일으킨다. 각 테이블은 약 1MB를 사용한다. 예를 들어 3500개의 Table이 있으면 JVM Memory 3.5GB정도를 사용한다. 그래서 많은 Table 또는 keyspace가 있으면 메모리 요구사항이 높아진다.  
+	Cassandra Keyspace는 JVM Memory의 Overhead를 일으킨다.   
+	각 테이블은 약 1MB를 사용하는데,
+	예를 들어 3500개의 Table이 있으면 JVM Memory 3.5GB정도를 사용한다. 그래서 많은 Table 또는 keyspace가 있으면 메모리 요구사항이 높아진다.   
 	최적은 500개 이하로 유지하고 최대 1000개를 넘지 않는것이 좋다.
 	
 - 친숙하지 않은 리눅스 환경  
 	Linux에는 좋은 툴들이 많다. 이것들과 친숙해져라.  
 		- Parallel SSH and Cluster SSH  
 		- Passwordless SSH  
-		- dstat / top / iostat / mpstat / iftop / sar /lsof / netstat /vmstat 
+		- dstat / top / iostat / mpstat / iftop / sar / lsof / netstat / vmstat 
 		
 
 
