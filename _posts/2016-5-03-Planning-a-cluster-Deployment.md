@@ -149,10 +149,10 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 3. usable_disk_space = formatted_disk_space * (0.5 to 0.8)
 
 Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 Disk 용량을 요구한다.  
-그러므로 Cassandra에서는 Disk를 가득 채워서 사용하지 말고 50~80%정도로 운영하는것을 권장한다.
+그러므로 Cassandra에서는 Disk를 가득 채워서 사용하지 말고 50~80%정도로 운영하는것을 권장한다.  
+  
 
-
-**Cassandra 구성시 피해야할 구성**
+**Cassandra 구성시 피해야할 구성**  
 
 - Storage area network  
 	SAN storage는 권장되지 않는다.  
@@ -177,7 +177,7 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 | 8GB | 5% | 8500(not max) | 10ms |  
 
  
-- Cassandra Rack Feature
+- Cassandra Rack Feature  
 	Single-token Architere(Not Virtualnode)에 해당되는 내용입니다.  
 	모든 클러스터를 하나의 Rack에 위치하는게 좋습니다.  
 		- 많은 유저들은 Rack은 교차순서로 구성되어야 함을 무시하거나 잊어버리는 경향이 있다. 이 순서는 데이터가 안전하고 적절하게 분산하게 해준다.  
