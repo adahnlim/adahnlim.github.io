@@ -164,7 +164,7 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 	대부분의 경우 기본 heap사이즈를 권장한다. 이 사이즈가 넘어가면 GC(Garbage Collection)을 수행하는 능력을 손실할 수 있다. 
  
 
-| Heap | Cpu Util | QPS | Latency |  
+| Heap | CPU Util | QPS | Latency |  
 |:---:|:---:|:---:|:---:|  
 | 40GB | 50% | 750 | 1 sec |  
 | 8GB | 5% | 8500(not max) | 10ms |  
