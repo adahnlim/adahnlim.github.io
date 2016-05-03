@@ -85,14 +85,14 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 	[http://thelastpickle.com/blog/2011/06/13/Down-For-Me.html](http://thelastpickle.com/blog/2011/06/13/Down-For-Me.html "Node갯수와 Consitency Level에 따른 Fail Range")
 	
 
-- Network
+- Network  
 	Cassandra는 분산 데이터 스토어로서, Request와 Replication을 네트워크를 통해 수행한다. 그러므로 Bottelneck이 발생하지 않도록 NIC를 분리하는게 좋다.
 
 		- 1G 이상의 대역폭을 추천
 		- rpc_address는 thrift/navtie protocol를 사용하는 것을 추천
 		- listen_address는 내부 스토리지 프로토콜을 사용하는것을 추천
-
-- Firewall
+ 
+- Firewall  
 	Firewall을 사용하면 클러스터내의 각 노드들이 서로 통신이 가능해아한다.(세부 포트는 문서 104p 참조)  
 	
 
