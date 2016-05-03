@@ -16,9 +16,9 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
     - 노드에서 메모리가 많으면 Read Performance가 좋아진다.   
 	- 메모리양에 따라 최근 Write된 Data가 Memtable에 가지고 있는 데이터의 양이 달라진다.  
 	- 큰 Memorytable은 Disk Flushing 횟수를 줄이고 Read를 위해 적은 파일을 Scan할 수 있다.  
-	- RAM의 양은 Hot data[^1]의 예상 사이즈에 따라 조절하면 좋다.  
+	- RAM의 양은 Hot data[^1]의 예상 사이즈에 따라 조절하면 좋다.
 	- Dedicate 환경과 Virtualization 환경에서 동일하다.   
-
+	
 			-  Production : 16GB~64GB (최소 8 GB)
 			-  Development(TB 제외) : 4GB 미만
 
