@@ -17,10 +17,11 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 	- 메모리양에 따라 최근 Write된 Data가 Memtable에 가지고 있는 데이터의 양이 달라진다.  
 	- 큰 Memorytable은 Disk Flushing 횟수를 줄이고 Read를 위해 적은 파일을 Scan할 수 있다.  
 	- RAM의 양은 Hot data[^1]의 예상 사이즈에 따라 조절하면 좋다.
-	- Dedicate 환경과 Virtualization 환경에서 동일하다.     
-	
-			-  Production : 16GB~64GB (최소 8 GB)
+	- Dedicate 환경과 Virtualization 환경에서 동일하다.
+	  
+			-  Production : 16GB~64GB (최소 8 GB)  
 			-  Development(TB 제외) : 4GB 미만
+
 
 - CPU  
 	다량 Insert는 Memory에서 처리하기전에 CPU에 부하가 생기는데 Cassandra에서는 Writing에 대해 CPU를 효율적으로 관리해준다.
