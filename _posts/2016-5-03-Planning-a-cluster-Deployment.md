@@ -1,4 +1,4 @@
----
+---	
 layout: post
 title:  Cassandra 3.x에서 Cluster 구성시 고려해야할 사항
 description: Cassandra 3.x에서 Cluster 구성(Enterprise/EC2)시 고려사항과 피해야할 사항 
@@ -12,18 +12,18 @@ tags: cassandra cluster architecutre
 Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하는게 중요하다.  
 주의 : 부하테스트 및 운영환경을 개발환경에 맞추지 말아라! 오류가 발생할 수 있다.
 
-- 메모리  
-    노드에서 메모리가 많으면 Read Performance가 좋아진다.
-	메모리양에 따라 최근 Write된 Data가 Memtable에 가지고 있는 데이터의 양이 달라진다.
-	큰 Memorytable은 Disk Flushing 횟수를 줄이고 Read를 위해 적은 파일을 Scan할 수 있다.
-	RAM의 양은 Hot data[^1]의 예상 사이즈에 따라 조절하면 좋다.
-	Dedicate 환경과 Virtualization 환경에서 동일하다.   
+- 메모리
+    - 노드에서 메모리가 많으면 Read Performance가 좋아진다.   
+	- 메모리양에 따라 최근 Write된 Data가 Memtable에 가지고 있는 데이터의 양이 달라진다.  
+	- 큰 Memorytable은 Disk Flushing 횟수를 줄이고 Read를 위해 적은 파일을 Scan할 수 있다.  
+	- RAM의 양은 Hot data[^1]의 예상 사이즈에 따라 조절하면 좋다.  
+	- Dedicate 환경과 Virtualization 환경에서 동일하다.   
 
-		-  Production : 16GB~64GB (최소 8 GB)
-		-  Development(TB 제외) : 4GB 미만
+			-  Production : 16GB~64GB (최소 8 GB)
+			-  Development(TB 제외) : 4GB 미만
 
 - CPU  
-	다량 Insert는 Memory에서 처리하기전에 CPU에 부하가 생기는데 Cassandra에서는 Writing에 대해 CPU를 효율적으로 관리해준다.)
+	다량 Insert는 Memory에서 처리하기전에 CPU에 부하가 생기는데 Cassandra에서는 Writing에 대해 CPU를 효율적으로 관리해준다.
 
 		- Production 
 			* Dedicate : 8core CPU Processor
@@ -41,15 +41,16 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 - Disk space  
 	Disk Space는 사용량에 기초한다. Cassandra에서 Data를 Disk를 쓰는경우는 Commitlog 발생시와 memtables->SSTable로 Flushing되는 경우이다.
 	SSTable은 주기적으로 Compacted된다.  
-	Compaction은 Merging / Rewrite Data / Old data Remove 작업으로 성능을 향상시킨다.단, Compaction의 종류와 갯수에 따라 달라진다. 
-	Compaction이 수행될때 Disk Util과 볼륨이 일시적으로 증가된다. 그러므로 노드에 충분한 Disk space가 있어야 한다. 큰 Compaction(WorstCase)일 경우 Compaction 종류에 따라 50% 이상의 충분한 Space가 있어야 한다.
+	Compaction은 Merging / Rewrite Data / Old data Remove 작업으로 성능을 향상시킨다. 단, Compaction의 종류와 갯수에 따라 달라진다. 
+	Compaction이 수행될때 Disk Util과 볼륨이 일시적으로 증가된다. 그러므로 노드에 충분한 Disk space가 있어야 한다.   큰 Compaction(WorstCase)일 경우 Compaction 종류에 따라 50% 이상의 충분한 Space가 있어야 한다.
 
 		- Capacity per node 
 			* 대부분의 경우 노드당 500GB~1TB가 Best!
 			* Maximum Recommand : 노드당 3TB~5TB(Uncompressed data)
  
 		- Capacity and I/O
-			* Disk를 선택할때 Capacity와 I/O를 모두 고려해야한다. 어떠한 경우에는 싼 SATA Disk를 사용하여 node를 병렬로 늘리는것이 좋을 때도 있다.
+			* Disk를 선택할때 Capacity와 I/O를 모두 고려해야한다. 
+			* 어떠한 경우에는 싼 SATA Disk를 사용하여 node를 병렬로 늘리는것이 좋을 때도 있다.
 
 		- Number of Disks - SATA
 			* 최소 2장필요(Commit log / data)
@@ -61,16 +62,19 @@ Memory/CPU/Disk/Node의 갯수/네트워크 등을 밸런스에 맞게 선택하
 			* Commit Log와 SSTables를 같은 Mount Point에 위치하는게 좋다.
 
 		- Data Disks
-			* 한장 또는 여러장 디스크를 사용하고 큰 데이터볼륨과 캐싱되지 않은 데이터와 Compaction을 빠르게 처리할수 있어야 한다.
+			* 1~N장 디스크 사용과 큰 데이터볼륨과 캐싱되지 않은 데이터와 Compaction을 빠르게 처리할수 있어야 한다.
 		
 		- RAID on Data Disks
-			* 다른 클러스터에 Replica가 있고, 1.2버전부터 JBOD feature가 포함되어 RAID10의 Overhead를 빼고 Disk Array를 구성할수 있기때문에 RAID는 권장되지 않는다.
+			* 다른 클러스터에 Replica가 존재하고 있다.
+			* 1.2버전부터 JBOD feature가 포함되어 RAID10의 Overhead를 빼고 Disk Array를 구성할수 있기때문에 RAID는 권장되지 않는다.
 			
 		- RAID on the Commit log disk
-			* Replica에서 Data loss를 방지하기때문에 필요하지 않지만, 더 강력한 Redundancy를 유지하고 싶으면 RAID 1를 사용해라.
+			* Replica에서 Data loss를 방지하기때문에 필요하지 않다.
+			* 더 강력한 Redundancy를 유지하고 싶으면 RAID 1를 사용해라.
 
 		- Extended File Systems
-			* XFS 또는 EXT4를 사용해라. Cassandra에서 SizeTieredCompactionStrategy를 사용하면 하나의 파일이 Disk Space의 반을 사용할 수 있기때문에 size limit이 큰 XFS또는 EXT4를 사용하는것이 좋다.
+			* XFS 또는 EXT4를 사용해라.
+			* Cassandra에서 SizeTieredCompactionStrategy를 사용하면 하나의 파일이 Disk Space의 반을 사용할 수 있기때문에 size limit이 큰 XFS또는 EXT4를 사용하는것이 좋다.
 
 
 - Number of Nodes  
@@ -183,7 +187,7 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 - SELECT .. IN or index lookups  
 	특별한 경우를 제외하고는 SELECT ..IN과 Indexl Lookup(Secondary Index) 사용을 피해라.
 
-- Using the Byte Ordered Partitioner
+- Using the Byte Ordered Partitioner  
 	Byte Ordered Partitioner의 사용은 권장되지 않는다.
 	Virtual node를 사용할때나 사용하지 않을때에도 Murmur3Partioner(Default) 또는 RandomPartitioner를 사용하는게 좋다.
 
@@ -200,10 +204,10 @@ Cassandra의 보통 Operation과 Compaction와 Repair Operation을 수행할때 
 	Cassandra Keyspace는 JVM Memory의 Overhead를 일으킨다. 각 테이블은 약 1MB를 사용한다. 예를 들어 3500개의 Table이 있으면 JVM Memory 3.5GB정도를 사용한다. 그래서 많은 Table 또는 keyspace가 있으면 메모리 요구사항이 높아진다.  
 	최적은 500개 이하로 유지하고 최대 1000개를 넘지 않는것이 좋다.
 	
-- 친숙하지 않은 리눅스 환경
+- 친숙하지 않은 리눅스 환경  
 	Linux에는 좋은 툴들이 많다. 이것들과 친숙해져라.  
-		- Parallel SSH and Cluster SSH
-		- Passwordless SSH
+		- Parallel SSH and Cluster SSH  
+		- Passwordless SSH  
 		- dstat / top / iostat / mpstat / iftop / sar /lsof / netstat /vmstat 
 		
  
