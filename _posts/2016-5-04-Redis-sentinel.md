@@ -37,12 +37,12 @@ Redis Sentinel은 Master/Slave환경에서 Master가 다운되면 자동으로 �
 		Welcome to the redis service installer
 		This script will help you easily set up a running redis server
 		
-		Please select the redis port for this instance: [6379] 7000                 # 사용 포트 지정
-		Please select the redis config file name [/etc/redis/7000.conf]				# 사용자 정의 
+		Please select the redis port for this instance: [6379] 7000             
+		Please select the redis config file name [/etc/redis/7000.conf]			
 		Selected default - /etc/redis/7000.conf			
-		Please select the redis log file name [/var/log/redis_7000.log] 			# 사용자 정의
+		Please select the redis log file name [/var/log/redis_7000.log] 		
 		Selected default - /var/log/redis_7000.log
-		Please select the data directory for this instance [/var/lib/redis/7000] 	# 사용자 정의
+		Please select the data directory for this instance [/var/lib/redis/7000] 	
 		Selected default - /var/lib/redis/7000
 		Please select the redis executable path [/usr/local/bin/redis-server] /usr/loca/bin/	redis-sentinel
 		Selected config:

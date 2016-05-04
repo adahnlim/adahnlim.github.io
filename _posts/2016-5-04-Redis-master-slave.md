@@ -35,12 +35,12 @@ tags: redis nosql In-MemoryDB
 		Welcome to the redis service installer
 		This script will help you easily set up a running redis server
 		
-		Please select the redis port for this instance: [6379] 6000                 # 사용 포트 지정
-		Please select the redis config file name [/etc/redis/6000.conf]				# 사용자 정의 
+		Please select the redis port for this instance: [6379] 6000    
+		Please select the redis config file name [/etc/redis/6000.conf] 
 		Selected default - /etc/redis/6000.conf			
-		Please select the redis log file name [/var/log/redis_6000.log] 			# 사용자 정의
+		Please select the redis log file name [/var/log/redis_6000.log]
 		Selected default - /var/log/redis_6000.log
-		Please select the data directory for this instance [/var/lib/redis/6000] 	# 사용자 정의
+		Please select the data directory for this instance [/var/lib/redis/6000]
 		Selected default - /var/lib/redis/6000
 		Please select the redis executable path [/usr/local/bin/redis-server] 		
 		Selected config:
@@ -64,8 +64,8 @@ tags: redis nosql In-MemoryDB
 		Success!
 		Starting Redis server...
 		Installation successful!
-		
-4. Slave 설정
+		 
+4. Slave 설정  
 	설치하면 독립적으로 master mode로 동작하기때문에 master instance에서는 변경할 사항이 없고  
 	slave instance 설정만 변경해주면 된다.
 	설치 쉘을 돌리면 자동으로 instance를 올려주므로 slave instance를 내려준다.
@@ -76,7 +76,7 @@ tags: redis nosql In-MemoryDB
 
  		# /etc/init.d/redis_6100 start
 
-5. Master/Slave 확인
+5. Master/Slave 확인  
 	이제 설정은 모두 끝났다. 정상적으로 구성이 되었나 확인하자.
 	- Master  
 
