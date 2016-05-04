@@ -73,8 +73,7 @@ tags: redis nosql In-MemoryDB
 		# /etc/init.d/redis_6100 stop
 		# vi /etc/redis/6100.conf
 		slaveof localhost 6000
-
- 		# /etc/init.d/redis_6100 start
+		# /etc/init.d/redis_6100 start
 
 5. Master/Slave 확인  
 	이제 설정은 모두 끝났다. 정상적으로 구성이 되었나 확인하자.
