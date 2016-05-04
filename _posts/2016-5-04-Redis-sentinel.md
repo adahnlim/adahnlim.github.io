@@ -87,7 +87,7 @@ Redis Sentinel은 Master/Slave환경에서 Master가 다운되면 자동으로 �
 			sentinel failover-timeout mymaster 9000000
 			sentinel config-epoch mymaster 0
 			sentinel leader-epoch mymaster 0
- 			# /etc/init.d/redis_7000 start
+			# /etc/init.d/redis_7000 start
 
 
 5. Sentinel 확인  
