@@ -44,13 +44,13 @@ Redis Sentinel은 Master/Slave환경에서 Master가 다운되면 자동으로 �
 		Selected default - /var/log/redis_7000.log
 		Please select the data directory for this instance [/var/lib/redis/7000] 	
 		Selected default - /var/lib/redis/7000
-		Please select the redis executable path [/usr/local/bin/redis-server] /usr/loca/bin/	redis-sentinel
+		Please select the redis executable path [/usr/local/bin/redis-server] /usr/local/bin/redis-sentinel
 		Selected config:
 		Port           : 7000
 		Config file    : /etc/redis/7000.conf
 		Log file       : /var/log/redis_7000.log
 		Data dir       : /var/lib/redis/7000
-		Executable     : /usr/loca/bin/	redis-sentinel
+		Executable     : /usr/loca/bin/redis-sentinel
 		Cli Executable : /usr/local/bin/redis-cli
 		Is this ok? Then press ENTER to go on or Ctrl-C to abort.
 		Copied /tmp/7000.conf => /etc/init.d/redis_7000
