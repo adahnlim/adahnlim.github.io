@@ -6,7 +6,8 @@ tags: python crawler mongodb
 ---
 
 Python을 이용한 Web Crawler를 만들때 필요한 HTML Parser는 대표적으로 BeautifulSoup이다.
-사용법은 [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/ "BeautifulSoup이다 공식 홈페이지") 를 참고하자.  
+사용법은 [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/ "BeautifulSoup이다 공식 홈페이지") 를 참고하자.
+  
 - Installation
   
 		# pip install beatifulsoup
