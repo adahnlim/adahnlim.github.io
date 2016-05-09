@@ -82,9 +82,9 @@ tags: redis nosql In-MemoryDB
 			# redis-cli -p 6000
 			127.0.0.1:6000> info replication
 			# Replication
-			role:master											  # Master 
-			connected_slaves:1									  # 연결된 Slave 숫자
-			slave0:ip=::1,port=6100,state=online,offset=141,lag=1 # 연결된 Slave 정보
+			role:master	# Master 
+			connected_slaves:1	# 연결된 Slave 숫자
+			slave0:ip=::1,port=6100,state=online,offset=141,lag=1	# 연결된 Slave 정보
 			master_repl_offset:141
 			repl_backlog_active:1
 			repl_backlog_size:1048576
@@ -96,8 +96,8 @@ tags: redis nosql In-MemoryDB
 			# redis-cli -p 6100
 			127.0.0.1:6100> info replication
 			# Replication
-			role:slave											# Slave
-			master_host:localhost								# Master 정보
+			role:slave	# Slave
+			master_host:localhost	# Master 정보
 			master_port:6000
 			master_link_status:up
 			master_last_io_seconds_ago:1
