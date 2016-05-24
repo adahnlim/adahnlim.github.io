@@ -2,7 +2,7 @@
 layout: post
 title:  ELK Stack을 이용하여 로그시스템 구축하기 2편 - Logstash and Beats
 description: ELK Stack - Logstash and Beats
-tags: cassandra snitch
+tags: ELK Logstash beats logstash-forwarder
 
 ---
 

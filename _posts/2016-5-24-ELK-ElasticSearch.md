@@ -2,7 +2,7 @@
 layout: post
 title:  ELK Stack을 이용하여 로그시스템 구축하기 1편 - ElasticSearch
 description: ELK Stack - ElasticSearch
-tags: cassandra snitch
+tags: ELK ElasticSearch
 
 ---
 
