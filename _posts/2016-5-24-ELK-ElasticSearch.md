@@ -13,10 +13,10 @@ Client에서는 Beats(기존 Logstash-Forwarder Project가 변경됨) - FileBeat
 
 1. 테스트 환경
 
-		Logstash01 : server01:5043  
-		Logstash02 : server02:5043
-		Elastic01  : server01:9200
-		Elastic02  : server02:9200
+		Logstash01 : 192.168.10.10:5043  
+		Logstash02 : 192.168.10.11:5043
+		Elastic01  : 192.168.10.10:9200
+		Elastic02  : 192.168.10.11:9200
 		Log Client : client01~09    
 
 2. ElasticSearch 설치 및 설정  
