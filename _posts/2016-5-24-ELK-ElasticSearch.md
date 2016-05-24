@@ -71,6 +71,6 @@ Client에서는 Beats(기존 Logstash-Forwarder Project가 변경됨) - FileBeat
 		[2016-05-24 20:14:53,926][INFO ][node                     ] [log_node01] started
 		[2016-05-24 20:14:53,979][INFO ][gateway                  ] [log_node01] recovered [0] indices into cluster_state
 		# 2번 노드 Add
-		[2016-05-24 20:15:00,965][INFO ][cluster.service          ] [log_node01] added {{log_node02}{10P6VMDzTLWK113_1yNUaA}{192.168.10.11}{192.168.10.11:9300}{max_local_storage_nodes=1},}, reason: zen-disco-join(join from node[{log_node02}{10P6VMDzTLWK113_1yNUaA}{192.168.10.11}{192.168.10.11:9300}{max_local_storage_nodes=1}]) 
+		[2016-05-24 20:15:00,965][INFO ][cluster.service          ] [log_node01] added {log_node02}{10P6VMDzTLWK113_1yNUaA}{192.168.10.11}{192.168.10.11:9300}{max_local_storage_nodes=1},}, reason: zen-disco-join(join from node[{log_node02}{10P6VMDzTLWK113_1yNUaA}{192.168.10.11}{192.168.10.11:9300}{max_local_storage_nodes=1}]) 
 
  
