@@ -2,7 +2,7 @@
 layout: post
 title:  Ubuntu에서 LDAP 서버 구성하기
 description: Ubnutu LDAP 서버구성
-tags: ldap
+tags: ldap-server
 
 ---
 
@@ -52,7 +52,7 @@ LDAP(Lightweight Directory Access Protocol)은 중앙에서 인증체계를 관�
 	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/ldap-10.PNG?raw=true)
 	
 
-			 * Stopping OpenLDAP slapd                                                                                                                            [ OK ] 
+			* Stopping OpenLDAP slapd                                                                                                                            [ OK ] 
 			  Moving old database directory to /var/backups:
 			  - directory unknown... done.
 			  Creating initial configuration... done.

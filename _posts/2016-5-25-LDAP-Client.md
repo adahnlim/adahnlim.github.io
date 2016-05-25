@@ -2,7 +2,7 @@
 layout: post
 title:  Ubuntu에서 LDAP Client 구성 하기
 description: Ubnutu LDAP Client
-tags: ldap
+tags: ldap-client
 
 ---
 
@@ -10,6 +10,7 @@ tags: ldap
 1. LDAP Client 설치
 
 		# sudo apt install libnss-ldapd
+
 	- LDAP서버 URI 입력  
 	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/ldap-11.PNG?raw=true)
 
