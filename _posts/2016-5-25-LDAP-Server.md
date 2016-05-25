@@ -7,7 +7,8 @@ tags: ldap-server
 ---
 
 
-LDAP(Lightweight Directory Access Protocol)은 중앙에서 인증체계를 관리할 수 있는 디렉토리 프로토콜입니다.  
+LDAP(Lightweight Directory Access Protocol)은 중앙에서 인증체계를 관리할 수 있는 디렉토리 프로토콜이다.    
+자세한 내용은 [https://help.ubuntu.com/lts/serverguide/openldap-server.html](https://help.ubuntu.com/lts/serverguide/openldap-server.html) 을 참고하자.
 
 1. LDAP 서버 설치
 
