@@ -23,4 +23,5 @@ LDAP(Lightweight Directory Access Protocol)은 중앙에서 인증체계를 관�
 		URI     ldap://hostname.example.com or ldap://ldapip
 		..
 		# dpkg-reconfigure slapd
-		![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/ldap-1.PNG?raw=true)
+
+![dd](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/ldap-1.PNG?raw=true)
