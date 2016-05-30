@@ -75,3 +75,80 @@ tags: cassandra-properties
 | trickle_fsync                                       | false                                     | sequantial Write가 수행될때 이 옵션을 enable하면 dirty_buffer( trickle_fsync_interval_in_kb에 설정된 값)를 OS에서 강제로 flushing한다. |
 | trickle_fsync_interval_in_kb                        | 10240                                     | fsync 사이즈                                                                                                                           |
 | windows_timer_interval                              | 1                                         |                                                                                                                                        |
+
+
+- Advanced Properties  
+  Advanced User를 위한 항목 또는 보통 잘 사용하지 않는 항목이다.
+
+| 항목                                               | 디폴트값                     | 설명                                                                                                                      |
+|----------------------------------------------------|------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| auto_bootstrap                                     | true                         | 신규노드(non-seed)에 자동으로 데이터를 마이그레이션 해준다.                                                               |
+| batch_size_wrn_threshold_in_kb                     | 5kb per batch                | batch size가 이 값을 초과할때 Log WARN을 출력한다.                                                                        |
+| batch_size_fail_threshold_in_kb                    | 50kb per batch               | bath size가 이 값을 초과할때 Log Fail을 출력한다.                                                                         |
+| broadcast_address                                  | listen_address               | 다른 노드에게 contact할 수 있는 IP                                                                                        |
+| initial_token                                      | disabled                     | 하나의 연속적인 범위를 가지는 single node 아키텍쳐에서 사용한다.                                                          |
+| num_tokens                                         | 256                          | vnode를 사용할때 토큰의 갯수.                                                                                             |
+| allocate_tokens_keyspace                           | KEYSPACE                     |                                                                                                                           |
+| partitioner                                        | Murmur3Partitioner           | cluster의 노드에게 데이터를 분산시키는 전략                                                                               |
+| storage_port                                       | 7000                         | node끼리 통신하는 포트                                                                                                    |
+| tracetype_query_ttl                                | 86400                        |                                                                                                                           |
+| tracetype_repair_ttl                               | 604800                       |                                                                                                                           |
+| auto_snapshot                                      | true                         | keyspace truncate 또는 drop table전에 snapshot을 수행할지 여부                                                            |
+| key_cache_keys_to_save                             | disabled(all keys saved)     | key cache에 저장되는 키의 갯수                                                                                            |
+| key_cache_save_period                              | 14400 sec (4hour)            | key cache에 저장되는 기간                                                                                                 |
+| key_cache_size_in_mb                               | empty                        | key cache에 사용되는 최대 사이즈. 지정하지 않으면 available heap * 0.05와 100MB중 작은값.                                 |
+| row_cache_class_name                               | disabled(row cache disabled) | 어떤 row cache provider를 사용할지.<br>- OHCProvider : fully off-heap<br>- SerializaingCacheProvider : Partially off-heap |
+| row_cache_keys_to_save                             | disabled(all keys saved)     | row cache에 저장되는 키의 갯수)                                                                                           |
+| row_cache_size_in_mb                               | 0(disabled)                  | row cache에 사용되는 최대 사이즈.                                                                                         |
+| row_cache_save_period                              | 0(disabled)                  | row cache에 저장되는 기간                                                                                                 |
+| memory_allocator                                   | NativeAllocator              | off heap 메모리 allocator.(NativeAllocator / JEMallocAllocator)                                                           |
+| counter_cache_size_in_mb                           | empty                        | 0.025 * heap 과 50MB중 작은값. disable하려면 0                                                                            |
+| counter_cache_save_period                          | 7200 sec                     | counter cache(keys only) 저장 기간                                                                                        |
+| counter_cache_keys_to_svae                         | disabled                     | counter cache에 저장할 키의 갯수(disabled은 모든 키 저장)                                                                 |
+| tombstone_warn_threshold                           | 1000                         | 최대 tombstone 갯수(Warning 전)                                                                                           |
+| tombstone_failure_threshold                        | 100000                       | 최대 tombstone 갯수(Fail 전)                                                                                              |
+| range_request_timeout_in_ms                        | 10000 ms                     | coordinator가 sequential 또는 index scan이 완료될때까지 기다릴수 있는 시간                                                |
+| read_reqest_timeout_in_ms                          | 5000ms                       | coordinator가 read가 완료될때까지 기다릴수 있는 시간                                                                      |
+| counter_write_request_timeout_in_ms                | 5000ms                       | coordinator가 counter write가 완료될때까지 기다릴수 있는 시간                                                             |
+| cas_contention_timeout_in_ms                       | 1000ms                       | coordinator가 CAS(compre and set) 오퍼레이션을 retry할수 있는 시간                                                        |
+| truncate_request_timeout_in_ms                     | 60000ms                      | coordinator가 truncate가 완료될때까지 기다릴수 있는 시간                                                                  |
+| write_request_timeout_in_ms                        | 2000ms                       | coordinator가 write가 완료될때까지 기다릴수 있는 시간                                                                     |
+| request_timeout_in_ms                              | 10000ms                      | coordinator가 다양한 오퍼레이션을 완료할때까지 기다릴수 있는 시간                                                         |
+| cross_node_timeout                                 | false                        | node간 정보교환 오퍼레이션 timeout 여부                                                                                   |
+| internode_send_buff_size_in_bytes                  | N/A                          | 노드간 송신 socket buffer size                                                                                            |
+| internode_recv_buff_size_in_bytes                  | N/A                          | 노드간 수신 socket buffer size                                                                                            |
+| internode_compression                              | all                          | 노드간 통신 트래픽 압축(all: 모든 통신, dc: dc간 통신,none : 사용안함)                                                    |
+| inter_dc_tcp_nodelay                               | false                        | data center내의 통신에서 tcp_nodelay옵션 사용 여부                                                                        |
+| streaming_socket_timeout_in_ms                     | 3600000 (1hour)              | streaming operation을 위한 소켓 timeout                                                                                   |
+| start_native_transport                             | true                         | native 전송 서버 사용 유무                                                                                                |
+| navite_transport_port                              | 9042                         | CQL 포트                                                                                                                  |
+| native_transport_max_threads                       | 128                          | request handling을 위한 최대 thread 갯수                                                                                  |
+| native_transport_max_frame_size_in_mb              | 256MB                        | 요청된 Frame이 값보다 크면 거절된다.                                                                                      |
+| native_transport_max_concurrent_connections        | -1                           | 최대 동시 클라이언트 접속 수(-1 무제한)                                                                                   |
+| native_transport_max_concurrent_connections_per_ip | -1                           | Source IP당 최대 동시 클라이언트 접속수(-1 무제한)                                                                        |
+| broadcast_rpc_address                              | unset                        | driver와 다른 노드들간의 broadcast RPC address. 0.0.0.0이 될수 없다.                                                      |
+| rpc_port                                           | 9160                         | thrift port                                                                                                               |
+| start_rpc                                          | true                         | start thrift RPC server                                                                                                   |
+| rpc_keepalive                                      | true                         | client connection의 keepalive 사용 유무                                                                                   |
+| rpc_max_threads                                    | unlimited                    | RPC thread pool에 최대 동시 요청수                                                                                        |
+| rpc_min_threads                                    | 16                           | remote procedure call을 위한 최소 thread pool 수                                                                          |
+| rpc_recv_buff_size_in_bytes                        | N/A                          | remote procedure call 수신 소켓 버퍼 사이즈                                                                               |
+| rpc_send_buff_size_in_bytes                        | N/A                          | remote procedure call 송신 소켓 버퍼 사이즈                                                                               |
+| rpc_server_type                                    | sync                         | - sync : thrift connection당 1개의 thread<br>- hsha : 반동기,반비동기                                                     |
+| dynamic_snitch_badness_threshold                   | 0.1                          | client의 요청을 동적으로 라우팅하기 위해 나쁜성능을 내는 노드를 제거하기 위한 성능 임계치                                 |
+| dynamic_snitch_reset_interval_in_ms                | 600000 ms                    | interval 값이 지나면 점수를 리셋한다.                                                                                     |
+| dynamic_snitch_update_interval_in_ms               | 100 ms                       | 점수 업데이트 빈도                                                                                                        |
+| hints_flush_period_in_ms                           | 10000                        | hint를 디스크로 flushing하는 빈도                                                                                         |
+| hints_directory                                    | $CASSANDRA_HOME/data/hints   | hint가 저장되는 디렉토리                                                                                                  |
+| hinted_handoff_enabled                             | true                         | hinted handoff 기능 사용 유무                                                                                             |
+| hinted_handoff_disabled_datacenters                | none                         | hinted handoff를 수행하지 않는 데이터센터(블랙리스트)                                                                     |
+| hinted_handoff_throttle_in_kb                      | 1024                         | hint를 최대 전송할 수 있는 수치(kb/sec)                                                                                   |
+| max_hint_window_in_ms                              | 10800000                     | 무응답노드를 위한 hint를 가지는 최대 시간                                                                                 |
+| max_hints_delivery_threads                         | 2                            | hint를 전달하기 위한 thread 갯수                                                                                          |
+| max_hints_file_size_in_mb                          | 128                          | hint를 저장하는 파일 최대 사이즈                                                                                          |
+| batchlog_replay_throttle_in_kb                     | 1024kb / sec                 |                                                                                                                           |
+| request_scheduler                                  | NoScheduler                  | client 요청에 따른 스케쥴링 정책                                                                                          |
+| request_scheduler_id                               | keyspace                     | request 스케쥴링 식별자                                                                                                   |
+| reqeust_scheduler_options                          | disabled                     | 스케쥴러 옵션                                                                                                             |
+| thrift_framed_transport_size_in_mb                 | 15                           | Thrift를 위한 프레임 사이즈                                                                                               |
+| thrift_max_message_lenght_in_mb                    | 16                           | 최대 Thrift Message (MB)                                                                                                  |
