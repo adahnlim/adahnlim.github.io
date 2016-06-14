@@ -42,24 +42,25 @@ Cassandra에서 내부 허가(Internal Authorization)에 대해 알아보자.
 
 	* Public Port  
 	
-| PortNumber | Description |
-|:----------:|:-----------:|
-| 22         | SSH Port    |
+	| PortNumber | Description |
+	|:----------:|:-----------:|
+	| 22         | SSH Port    |  
 
 	* Cassandra Inter-node Ports
 
-| PortNumber |           Description          |
-|:----------:|:------------------------------:|
-| 7000       | Cassandra 노드간 클러스터 통신 |
-| 7001       | Cassandra SSL 클러스터 통신    |
-| 7199       | Cassandra JMX 모니터링         |
+
+	| PortNumber |           Description          |
+	|:----------:|:------------------------------:|
+	| 7000       | Cassandra 노드간 클러스터 통신 |
+	| 7001       | Cassandra SSL 클러스터 통신   |
+	| 7199       | Cassandra JMX 모니터링       |
 
 	* Cassandra Client Ports
 
-| PortNumber |           Description          |
-|:----------:|:------------------------------:|
-| 9042       | Cassandra Client Port |
-| 9160       | Cassandra Client Port(Thrift)    |
+	| PortNumber |           Description          |
+	|:----------:|:------------------------------:|
+	| 9042       | Cassandra Client Port |
+	| 9160       | Cassandra Client Port(Thrift) |
 
 
 - JMX 인증 Enable
