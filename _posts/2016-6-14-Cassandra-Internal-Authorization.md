@@ -17,10 +17,10 @@ Cassandra에서 내부 허가(Internal Authorization)에 대해 알아보자.
 		- system.local  
 		- system.peers  
 
-- Internal Authorization 설정
+- Internal Authorization 설정  
 	CassandraAuthorizer는 다양한 Internal Authorizer 중에 하나이다.  
-	CassandraAuthorizer는는 system_auth.permission table에 퍼미션을 저장하고 허가와 관련된 CQL을 지원한다.   
-	CassandraAuthorizer는를 활성화하려면 cassandar.yaml를 수정해야 한다.
+	CassandraAuthorizer는 system_auth.permission table에 퍼미션을 저장하고 허가와 관련된 CQL을 지원한다.   
+	CassandraAuthorizer를 활성화하려면 cassandar.yaml를 수정해야 한다.
 
 	* 절차
 		1. cassandra.yaml파일을 열어 수정한다.
@@ -37,7 +37,7 @@ Cassandra에서 내부 허가(Internal Authorization)에 대해 알아보자.
 	* 결과  
 	CQL에서 GRANT / LIST PERMISSIONS / REVOKE를 사용할 수 있다.
 
-- 방화벽 설정
+- 방화벽 설정  
 	Cassandra Cluster node에서 방화벽이 수행중이면 반드시 아래 포트를 오픈해야한다.
 
 	* Public Port  
