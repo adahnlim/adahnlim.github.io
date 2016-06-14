@@ -16,7 +16,7 @@ cassandra.yaml을 수정하면 반드시 node를 재시작해주어야 반영된
 	- DataStax Enterprise package installations: /etc/dse/cassandra 
 	- DataStax Enterprise tarball installations: install_location/resources/cassandra/conf  
 	
-
+  
 - Quick Start  
   클러스터를 구성하기기 위한 가장 기본적인 항목이다.
 
