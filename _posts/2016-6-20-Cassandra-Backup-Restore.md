@@ -1,6 +1,6 @@
 ---	
 layout: post
-title:  Cassandra 3.x Backup & Restore date
+title:  Cassandra 3.x Backup & Restore data
 description: Cassandra 3.x의 백업 및 복구
 tags: cassandra-backup cassandra-restore
 ---
