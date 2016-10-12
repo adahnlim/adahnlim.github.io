@@ -111,6 +111,7 @@ Spark홈페이지에 보면 따라할 수 있는 예제가 있다.
 	이 때에는 spark 기본 library(YOUR_SPARK_HOME/jars)를 프로젝트 홈/lib에 링크를 걸어주고 build.sbt의 libraryDependencies를 삭제해준다.
 
 		# ln -s YOUR_SPARK_HOME/jars prj-example/lib
+		
 	그러면 프로젝트홈/lib에 있는 jar를 참조해서 패키징한다. 
 	그 이외의 라이브러리가 필요할 경우 lib에 .jar파일을 수동(인터넷에서 찾아 복사)으로 추가하여 패키징한다.
 
