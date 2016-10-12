@@ -35,8 +35,8 @@ Custom Metric은 쉘명령어의 결과값을 이용하여 Zabbix에서 보여�
 
 	Configuration -> Template or Hosts -> Items -> Create Item
 
-	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/zabbix-1.PNG?raw=true)
+	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/zabbix-1.png?raw=true)
 
 	Item 특성에 맞게 그래프 또는 Event Trigger 추가
 
-	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/zabbix-2.PNG?raw=true)
+	![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/zabbix-2.png?raw=true)
