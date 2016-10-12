@@ -17,5 +17,3 @@ permalink: /archive/
  
 {% endfor %}
 
-
-</article>
