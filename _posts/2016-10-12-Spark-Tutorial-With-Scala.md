@@ -71,7 +71,7 @@ Spark홈페이지에 보면 따라할 수 있는 예제가 있다.
 		  }
 		}
 
-		# build.sbt
+		# vi build.sbt
 
 		name := "Simple Project"
 
@@ -95,7 +95,7 @@ Spark홈페이지에 보면 따라할 수 있는 예제가 있다.
 		.
 		.
 		.
-		Lines with a: 20, Lines with b: 10
+		Lines with a: 20, Lines with b: 10 // 결과 출력
 		.
 		.
 		.
