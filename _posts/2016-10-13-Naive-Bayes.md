@@ -1,8 +1,8 @@
 --- 
 layout: post
-title:  Spark Example - Naive Bayes 분류 모델
+title:  Spark - Naive Bayes 분류 모델
 description: Spark MLlib(Naive Bayes) 분류 모델을 통한 성별 예측
-tags: spark scala Naive-Bayes classification data-science Mastering-Apache-Spark
+tags: spark scala Naive-Bayes classification data-science Mastering-Apache-Spark mllib
 --- 
 
 PACKT사의 'Mastering Apache Spark'에서 사용되는 예제들을 중심으로 학습하였다.
