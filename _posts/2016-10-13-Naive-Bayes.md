@@ -22,5 +22,6 @@ PACKT사의 'Mastering Apache Spark'에서 사용되는 예제들을 중심으�
         Accuracy : 50.73...
 
 - Summary
-    책에 서술되었던 것 처럼 해당 데이터를 Naive Bayes 모델로 예측하는 것은 적합하지 않다.
+
+    정확도가 50%밖에 되지 않으므로 이 데이터는 Naive Bayes 모델로 예측하는 것은 적합하지 않다.
     
