@@ -13,4 +13,4 @@ R 이용한 Web Crawler를 만들때 필요한 HTML Parser로 rvest를 이용하
 
 - Source
     
-    [https://github.com/adahnlim/webcrawler/blob/master/naver_news.R](https://github.com/adahnlim/webcrawler/blob/master/naver_news.R")
+    [https://github.com/adahnlim/webcrawler/blob/master/naver_news.R](https://github.com/adahnlim/webcrawler/blob/master/naver_news.R)
