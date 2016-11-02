@@ -24,4 +24,4 @@ Python을 이용한 Web Crawler를 만들때 필요한 HTML Parser는 대표적�
 
         ex) python naver_news.py 2016-10-01 2016-10-30 helloworld
 
-    [https://github.com/adahnlim/python_webcrawler/blob/master/naver_news.py](https://github.com/adahnlim/python_webcrawler/blob/master/naver_news.py")
+    [https://github.com/adahnlim/webcrawler/blob/master/naver_news.py](https://github.com/adahnlim/webcrawler/blob/master/naver_news.py")
