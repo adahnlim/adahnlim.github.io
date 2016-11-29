@@ -21,7 +21,7 @@ SlackAPI 파이선 인터페이스로 Slacker([https://github.com/os/slacker](ht
 
     1. https://YOUR_SLACK_URL.slack.com/apps 접속
     2. 우상단 Build 클릭
-    3. 다른팀 또는 나의팀에 대한 앱을 만들것인지 선
+    3. 다른팀 또는 나의팀에 대한 앱을 만들것인지 선택
     4. Bots 선택
     5. Bot 이름 입력
     6. API-Token 보관 및 기타설정(아이콘, 이름 등)하기
