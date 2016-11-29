@@ -15,8 +15,12 @@ SlackAPI 파이선 인터페이스로 Slacker([https://github.com/os/slacker](ht
 
 - 구글 캘린더 API이용하기
     
-    구글 캘린더를 가져오기 위해서는 캘린더API를 이용해야 한다. [https://developers.google.com/google-apps/calendar/quickstart/dotnet](https://developers.google.com/google-apps/calendar/quickstart/dotnet)를 참고하여 원하는 언어에 대한 샘플을 참고하자.
+    구글 캘린더를 가져오기 위해서는 캘린더API를 이용해야 한다. [https://developers.google.com/google-apps/calendar/quickstart/dotnet](https://developers.google.com/google-apps/calendar/quickstart/dotnet)에 접속하여 원하는 언어에 대한 샘플을 참고하자.
  
+    1. API키 받기
+    2. google clicent library 설치(pip install --upgrade google-api-python-client)
+    3. 샘플 실행
+    
 - Slack Bot 만들기
 
     1. https://YOUR_SLACK_URL.slack.com/apps 접속
