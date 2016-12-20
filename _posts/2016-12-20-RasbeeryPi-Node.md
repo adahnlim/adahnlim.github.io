@@ -3,6 +3,7 @@ layout: post
 title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - Node.js 설치
 description: 라즈베리파이3에 Node.js 설치
 tags: 라즈베리파이 rasberrypi raspbian node.js
+date: 2016-12-20
 ---
 
 이 포스팅에서는 라즈베리파이3에 웹서버로 사용하는 최신 Node.js를 설치해보자.
