@@ -2,7 +2,7 @@
 layout: post
 title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 설계
 description: 라즈베리파이3+아두이노를 이용하여 Home IoT를 설계해보자.
-tags: 라즈베리파이 rasberrypi aduino 아두이노
+tags: 라즈베리파이 raspberrypi aduino 아두이노
 date: 2016-12-18
 ---
 
