@@ -46,7 +46,7 @@ date: 2016-12-20
     3. 기존에 사용중이던 기능들(FTP List & Delete)  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/node-3.png?raw=true)
 
-    4. 반응형으로 개발되어 모바일&타블렛 환경에도 적합함
+    4. 반응형으로 개발되어 모바일&타블렛 환경에도 적합함  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/node-4.png?raw=true)
 
 
