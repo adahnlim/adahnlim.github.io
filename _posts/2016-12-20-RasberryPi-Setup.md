@@ -12,7 +12,7 @@ tags: 라즈베리파이 rasberrypi raspbian
     microSD(8GB 이상 추천)와 리더기를 미리 준해놓자.
 
     1. [라즈베리파이 공식홈페이지](https://www.raspberrypi.org/downloads/raspbian/)에 접속하여 OS 이미지를 다운받는다.  
-    RASPBIAN JESSIE WITH PIXEL은 GUI와 기타 유틸리티가 설치된 이미지이고 LITE는 기본 이미지이다.
+    RASPBIAN JESSIE WITH PIXEL은 GUI와 기타 유틸리티가 설치된 이미지이고 LITE는 기본 이미지이다.  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/rasberry-3.png?raw=true)
     2. 다운로드를 받고 압축을 풀면 .img 파일이 생성된다.
     3. 헤당 이미지를 microSD에 담기 위해서는 유틸리티가 필요하다.  
