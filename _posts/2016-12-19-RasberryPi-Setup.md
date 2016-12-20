@@ -1,4 +1,3 @@
-    GUI) Preperence -> Raspbeery Pi Configuration -> Expand Filesystem  
 --- 
 layout: post
 title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 라즈베리파이 설치
