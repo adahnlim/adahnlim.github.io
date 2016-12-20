@@ -33,9 +33,8 @@ tags: 라즈베리파이 rasberrypi raspbian
 
     부팅시키고 정상적으로 OS가 올라오면 다음과 같이 GUI(필자는 GUI 이미지로 설치) 또는 터미널 프롬프트가 뜬다.
 
-    1. 로그인(초기 로그인 정보 : pi / raspberry)
+    1. 로그인(초기 로그인 정보 : pi / raspberry)  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/rasberry-4.png?raw=true)
-
     2. 초기에는 microSD용량이 다 설정된 것이아니라 이미지 크기정도 사용할 수 있는데 이것을 확장 시켜준다.  
     GUI) Preperence -> Raspbeery Pi Configuration -> Expand Filesystem  
     CLI) sudo raspi-config -> 1. Expand Filesystem
