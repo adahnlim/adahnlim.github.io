@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 프로젝트 - 라즈베리파이 설치
+title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 라즈베리파이 설치
 description: 라즈베리파이3에 RASPBIAN 설치 및 설정
 tags: 라즈베리파이 rasberrypi raspbian
 ---
