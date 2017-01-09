@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 아두이노 연결
+title: Home IoT 구축 - 아두이노 연결 및 LED테스트
 description: 라즈베리파이3+아두이노 연결 및 LED테스트
 tags: 라즈베리파이 raspberrypi raspbian 아두이노 arduino
 date: 2017-1-7
