@@ -3,7 +3,7 @@ layout: post
 title: Home IoT 구축 - 아두이노 연결 및 LED테스트
 description: 라즈베리파이3+아두이노 연결 및 LED테스트
 tags: 라즈베리파이 raspberrypi raspbian 아두이노 arduino
-date: 2017-1-7
+date: 2017-1-6
 ---
 
 드디어 알리에서 주문한 아두이노+센서 셋트가 도착하였다.  
@@ -162,6 +162,6 @@ date: 2017-1-7
 
     5. 확인
 
-        [![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-8.png?raw=true)](https://www.youtube.com/watch?v=LGYxOTKig40)
+        자
 
 

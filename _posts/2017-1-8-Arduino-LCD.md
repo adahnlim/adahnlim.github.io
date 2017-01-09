@@ -11,8 +11,9 @@ date: 2017-1-8
 
     1602 LCD는 16*2 LCD이며, 16핀이다보니 핀연결을 불편함을 줄이고자 1602 I2C(Inter-Interfrated Circuit)모듈(4핀)이 같이 나온 제품이다.
 
-    연결 회로도는 아래와 같다.
+    연결 회로도는 아래와 같다.  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-12.png?raw=true)
+
 
 2. LCD에 메세지 출력하기
 
@@ -25,7 +26,7 @@ date: 2017-1-8
         1. https://bitbucket.org/fmalpartida/new-liquidcrystal/downloads에서 버전(v1.2.1) 다운로드
         2. 아두이노IDE -> Sketch -> Import Library -> Add Library 를 선택해 다운로드 받은 파일을 선택
 
-        ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-13.png?raw=true)
+    ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-13.png?raw=true)
 
         3. 아두이노 IDE 재시작
 

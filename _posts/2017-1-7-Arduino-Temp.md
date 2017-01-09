@@ -3,7 +3,7 @@ layout: post
 title: Home IoT 구축 - 온습도 센서(DHT11)
 description: 아두이노에 온습도 센서를 연결해보자.
 tags: 라즈베리파이 raspberrypi raspbian 아두이노 arduino DHT11 
-date: 2017-1-8
+date: 2017-1-7
 ---
 
 이제 본격적으로 센서를 달아 아두이노를 가지고 놀아보자.
