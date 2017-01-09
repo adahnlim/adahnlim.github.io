@@ -11,7 +11,7 @@ date: 2017-1-7
 1. 온습도 센서(DHT11) 연결
 
     DHT-11은 저렴하게 온/습도를 같이 측정할 수 있는 센서이다. 알리에서 약 1달러 내외에 구입 가능한다.  
-    연결 회로도는 아래와 같다.
+    연결 회로도는 아래와 같다.  
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-9.png?raw=true)
 
     실제 연결 사진  

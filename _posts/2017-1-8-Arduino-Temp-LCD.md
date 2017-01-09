@@ -1,13 +1,13 @@
 --- 
 layout: post
-title: Home IoT 구축 - 온/습도를 LCD에 표시하
+title: Home IoT 구축 - 온/습도를 LCD에 표시하자
 description: 아두이노에 온/습도계와 LCD를 연결하여 표시하자.
 tags: 라즈베리파이 raspberrypi raspbian 아두이노 arduino 1602 I2C DHT11
 date: 2017-1-8
 ---
 
 
-1. DHT11 및 16*2 LCD 연결
+1. DHT11 및 16*2 LCD 연결  
 
     
     연결 회로도는 아래와 같다.  

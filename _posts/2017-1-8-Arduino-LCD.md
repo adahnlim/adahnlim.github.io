@@ -7,11 +7,12 @@ date: 2017-1-8
 ---
 
 
-1. 16*2 LCD 연결
+1. 16*2 LCD 연결  
 
     1602 LCD는 16*2 LCD이며, 16핀이다보니 핀연결을 불편함을 줄이고자 1602 I2C(Inter-Interfrated Circuit)모듈(4핀)이 같이 나온 제품이다.
 
     연결 회로도는 아래와 같다.  
+
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-12.png?raw=true)
 
 
