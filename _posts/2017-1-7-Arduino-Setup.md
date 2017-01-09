@@ -1,51 +1,52 @@
 --- 
 layout: post
-title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 아두이노 얀결
-description: 라즈베리파이3+아두이노 연결
+title: 라즈베리파이3+아두이노를 이용한 Home IoT 구축 - 아두이노 연결
+description: 라즈베리파이3+아두이노 연결 및 LED테스트
 tags: 라즈베리파이 raspberrypi raspbian 아두이노 arduino
 date: 2017-1-7
 ---
 
-드디어 알리에서 주문한 아두이노+센서 셋트가 도착하였다.
-- 내용물
-    - 1 X Arduino Uno R3 보드
-    - 1 X USB 케이블
-    - 1 X 점프 케이블
-    - 1 X 830 브레드보드
-    - 5 X LED 빛
-    - 1 갑 저항
-    - 1 X 암수 dupond 라인
-    - 1 X 전위차계
-    - 1 X 부저
-    - 1X74HC595
-    - 1 X 적외선 수신기
-    - 1 X LM35
-    - 1 X 불꽃 센서
-    - 1 X 볼 스위치
-    - 1 X 포토 레지스터
-    - 1 X 키 버튼
-    - 1 X 원격 제어
-    - 1 X 자리 디스플레이 튜브
-    - 1X8*8 도트 매트릭스 모듈
-    - 1 X 1-digit 디스플레이 튜브
-    - 1 X 스테퍼 모터 드라이버 보드
-    - 1 X 스테퍼 모터
-    - 1X9 그램 서보
-    - 1 X IIC 1602 LCD
-    - 1 X XY 조이스틱 모듈
-    - 1 X 모듈
-    - 1 X 물 테스트 모듈
-    - 1 X RFID 모듈
-    - 1 X RFID 키 체인
-    - 1 X RFID 흰색 카드
-    - 1 X 사운드 모듈
-    - 1 X 릴레이 모듈
-    - 1 X 시계 모듈
-    - 1X4*4 키 보드
-    - 1 X RGB 3 컬러 모듈
-    - 1X9 볼트 배터리 스냅 
+드디어 알리에서 주문한 아두이노+센서 셋트가 도착하였다.  
 
-    ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-6.jpg?raw=true)
+- 내용물  
+    - 1 X Arduino Uno R3 보드  
+    - 1 X USB 케이블  
+    - 1 X 점프 케이블  
+    - 1 X 830 브레드보드  
+    - 5 X LED 빛  
+    - 1 갑 저항  
+    - 1 X 암수 dupond 라인  
+    - 1 X 전위차계  
+    - 1 X 부저  
+    - 1X74HC595  
+    - 1 X 적외선 수신기  
+    - 1 X LM35  
+    - 1 X 불꽃 센서  
+    - 1 X 볼 스위치  
+    - 1 X 포토 레지스터  
+    - 1 X 키 버튼  
+    - 1 X 원격 제어  
+    - 1 X 자리 디스플레이 튜브  
+    - 1X8*8 도트 매트릭스 모듈  
+    - 1 X 1-digit 디스플레이 튜브  
+    - 1 X 스테퍼 모터 드라이버 보드  
+    - 1 X 스테퍼 모터  
+    - 1X9 그램 서보  
+    - 1 X IIC 1602 LCD  
+    - 1 X XY 조이스틱 모듈  
+    - 1 X 모듈  
+    - 1 X 물 테스트 모듈  
+    - 1 X RFID 모듈  
+    - 1 X RFID 키 체인  
+    - 1 X RFID 흰색 카드  
+    - 1 X 사운드 모듈  
+    - 1 X 릴레이 모듈  
+    - 1 X 시계 모듈  
+    - 1X4*4 키 보드  
+    - 1 X RGB 3 컬러 모듈  
+    - 1X9 볼트 배터리 스냅   
+
+![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-6.jpg?raw=true)
 
 
 - 아두이노 패키지 설치
