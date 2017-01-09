@@ -20,5 +20,6 @@ permalink: /about/
     + Spark
     + Hive
     + React
+    + Raspberrypi + arduino
 
 - [adahn.lim@gmail.com](mailto:adahn.lim@gmail.com) 입니다.
