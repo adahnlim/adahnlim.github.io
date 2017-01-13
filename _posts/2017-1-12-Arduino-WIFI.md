@@ -16,8 +16,8 @@ date: 2017-1-12
 
   아래 두 사이트를 참고해서 셋업을 진행하였다.
 
-  - https://blog.rjdlee.com/getting-started-with-wemos-d1-on-mac-osx/
-  - https://www.wemos.cc/tutorial/get-started-arduino.html
+  - [https://blog.rjdlee.com/getting-started-with-wemos-d1-on-mac-osx/](https://blog.rjdlee.com/getting-started-with-wemos-d1-on-mac-osx/)
+  - [https://www.wemos.cc/tutorial/get-started-arduino.html](https://www.wemos.cc/tutorial/get-started-arduino.html)
 
   연결 사진  
 
