@@ -7,7 +7,6 @@ date: 2017-1-15
 ---
 
 이제 1단계 프로젝트(각 방에 모션센서와 온/습도현황 체크)가 거의 마무리 되어간다.  
-
 오늘은 실제 패키징에 앞서 생각했던데로 동작하는지 목업 테스트를 진행하였다.
 
 1. 회로 연결 
@@ -15,7 +14,8 @@ date: 2017-1-15
   - 온습도계 : D5 + 5V + GND
   - 모션센서 : D4 + 5v + GND
 
-![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/motion1.jpg?raw=true)
+  ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/motion1.jpg?raw=true)
+
 
 2. 아두이노 소스 코드
 
@@ -70,11 +70,11 @@ date: 2017-1-15
 
        }
 
-4. 결과
+3. 결과
 
   정상적으로 시리얼모니터에 값이 출력되는 것을 확인 할 수 있다.
 
-![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/motion2.png?raw=true)
+  ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/motion2.png?raw=true)
 
 이제 라즈베리파이에서 데이터를 받을 수 있게 웹서버 코드개발을 진행하면 된다.
 
