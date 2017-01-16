@@ -12,7 +12,7 @@ date: 2017-1-12
 
 ![](https://www.wemos.cc/sites/default/files/2016-09/d1_1_3.jpg)
 
-1. Wemos D1 Setup
+- Wemos D1 Setup
 
   아래 두 사이트를 참고해서 셋업을 진행하였다.
 
@@ -24,12 +24,12 @@ date: 2017-1-12
   ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/wemos-2.jpeg?raw=true)
 
 
-2. WIFI&HTTP Client 모듈
+- WIFI&HTTP Client 모듈
 
   - ESP8266Wifi.h : WIFI 연결 및 인증
   - ESP8266HTTPClient : HTTP Request & Response
 
-3. 아두이노 소스 코드
+- 아두이노 소스 코드
 
   아두이노에서 adahn=apitest, foo=bar 메세지를 보내면 라즈베리파이 웹서버 콘솔에서 받은 메세지 출력&받은 메세지 리턴 하는 코드이다.
 
@@ -83,7 +83,7 @@ date: 2017-1-12
 
         }
 
-4. 결과
+- 결과
 
   정상적으로 라즈베리파이 웹서버 콘솔과 시리얼모니터에 값이 출력되는 것을 확인 할 수 있다.
 ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/wemos-1.png?raw=true)

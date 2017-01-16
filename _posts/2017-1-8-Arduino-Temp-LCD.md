@@ -7,7 +7,7 @@ date: 2017-1-8
 ---
 
 
-1. DHT11 및 16*2 LCD 연결  
+- DHT11 및 16*2 LCD 연결  
 
     
     연결 회로도는 아래와 같다.  
@@ -19,7 +19,7 @@ date: 2017-1-8
     ![](https://github.com/adahnlim/adahnlim.github.io/blob/master/images/arduino-4.jpg?raw=true)
 
 
-2. LCD에 온/습도 출력하기
+- LCD에 온/습도 출력하기
 
     1. 아두이노 코드 작성
     
